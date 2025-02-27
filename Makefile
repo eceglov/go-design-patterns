@@ -1,5 +1,5 @@
-creational: factory
+creational: factory-method
 
-factory:
+factory-method:
 	@echo "Running Creational Factory pattern..."
-	go run ./cmd/creational/factory
+	go run ./cmd/creational/factory-method

@@ -1,4 +1,4 @@
-package transport
+package logistics
 
 type Submarine struct {
 	Transport

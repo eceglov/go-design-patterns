@@ -1,13 +1,13 @@
-package transport
+package logistics
 
 import "log"
 
-type Plane struct {
+type Ship struct {
 	Transport
 }
 
-func NewPlane(id int, name string, registration string, capacity int) (ITransport, error) {
-	return &Plane{
+func NewShip(id int, name string, registration string, capacity int) (ITransport, error) {
+	return &Ship{
 		Transport{
 			Id:           id,
 			Name:         name,
@@ -17,8 +17,8 @@ func NewPlane(id int, name string, registration string, capacity int) (ITranspor
 	}, nil
 }
 
-func (t *Plane) Deliver() error {
-	born := "air"
+func (t *Ship) Deliver() error {
+	born := "sea"
 	log.Printf("Delivering goods by %s: id: %d, name: %s, registration: %s, capacity: %d",
 		born, t.Id, t.Name, t.Registration, t.Capacity)
 
